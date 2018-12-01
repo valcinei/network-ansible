@@ -15,5 +15,7 @@ RUN ssh-keygen -t rsa -b 4096 -f  /etc/ssh/ssh_host_key
 RUN apk --update add --no-cache python
 RUN apk  add --no-cache py-pip
 RUN apk add --no-cache git
+RUN pip install paramiko PyYAML Jinja2 httplib2 six boto \
+"git+git://github.com/ansible/ansible.git@stable-2.6"
 EXPOSE 22
 CMD ["/usr/sbin/sshd","-D"]
