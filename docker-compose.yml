@@ -1,0 +1,37 @@
+version: "3.5"
+
+services:
+  host:
+    container_name: host
+    image: alpine-ssh
+    restart: always
+    ports:
+     - 23:22
+    networks: 
+     - private_net
+    tty: true
+    volumes:
+     - ansible:/home/ansible
+
+  cloud_1:
+    container_name: server_1
+    image: alpine-ssh
+    restart: always
+    ports:
+     - 23:22
+    networks: 
+     - private_net
+    tty: true
+  cloud_2:
+    image: alpine-ssh
+    restart: always
+    container_name: server_2
+    ports:
+     - 23:22
+    networks: 
+     - private_net
+    tty: true
+networks: 
+   private_net:
+volumes:
+  ansible:
