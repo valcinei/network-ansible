@@ -3,7 +3,7 @@ version: "3.5"
 services:
   host:
     container_name: host
-    image: alpine-ssh
+    image: alpine-ansible
     restart: always
     ports:
      - 23:22
