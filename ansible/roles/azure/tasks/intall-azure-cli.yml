@@ -3,7 +3,7 @@
   hosts: server_teste
   tasks:
     - pip: 
-       name: azure
+       name: azure-cli
       with_items:
         - epel-release
         - vim
