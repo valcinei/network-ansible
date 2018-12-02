@@ -11,7 +11,7 @@ services:
      - private_net
     tty: true
     volumes:
-     - ansible:/home/ansible
+     - $PWD/ansible:/home/ansible
 
   cloud_1:
     container_name: server_1
@@ -33,5 +33,3 @@ services:
     tty: true
 networks: 
    private_net:
-volumes:
-  ansible:

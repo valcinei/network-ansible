@@ -1,0 +1,13 @@
+---
+- name: Instaal azure
+  hosts: churrops
+  tasks:
+    - pip: 
+       name: azure
+      with_items:
+        - epel-release
+        - vim
+        - nano
+        - git
+        - wget
+        - curl
