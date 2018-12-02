@@ -1,6 +1,6 @@
 ---
-- name: Instaal azure
-  hosts: churrops
+- name: Install azure
+  hosts: server_teste
   tasks:
     - pip: 
        name: azure
