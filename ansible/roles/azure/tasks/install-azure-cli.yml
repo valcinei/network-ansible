@@ -1,7 +1,9 @@
----
+--- 
+- apk:
+    name:  py-pip 
+    state: present
+    update_cache: yes
 - pip:
-    name: pip
-    state: forcereinstall
-- pip:
-    name: azure-cli
-    state: forcereinstall
+    name:
+      - azure-cli
+    state: present 
