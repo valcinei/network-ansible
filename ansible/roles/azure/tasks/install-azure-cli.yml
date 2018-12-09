@@ -1,0 +1,7 @@
+---
+- pip:
+    name: pip
+    state: forcereinstall
+- pip:
+    name: azure-cli
+    state: forcereinstall

@@ -1,2 +1,3 @@
 ---
 # tasks file for azure
+- include_tasks: 'install-azure-cli.yml'
