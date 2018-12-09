@@ -1,3 +1,4 @@
 ---
 # tasks file for azure
 - include_tasks: 'install-azure-cli.yml'
+- include_tasks: 'install-docker.yml'
